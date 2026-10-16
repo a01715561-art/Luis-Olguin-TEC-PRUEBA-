@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Special+Elite&family=Montserrat:wght@400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body.tema-inicio,
+body.tema-historia,
+body.tema-integrantes,
+body.tema-canciones,
+body.tema-favoritas {
+    background-color: transparent; 
+}
+header {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #4a4a4a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.logo h1 {
+    font-family: 'New Rocker', display;
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+nav ul { display: flex; gap: 1rem; list-style: none; }
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #383838;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px #111111;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover { 
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+    box-shadow: 2px 2px 0px #000000;
+    transform: translateY(-2px);
+}
+
+.hero { position: relative; height: 60vh; overflow: hidden;}
+.hero img { width: 100%; height: 100%; object-fit: cover; filter:none; }
+.hero-text {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center; width: 100%;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 2rem;
+    border: 1px solid #555555;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.hero-text h2 { font-family: 'New Rocker', display; font-size: 3rem; color: #ffffff; }
+
+.container { max-width: 1000px; margin: 3rem auto; padding: 2rem; }
+h2, h3, h4 { font-family: 'Special Elite', monospace; color: #ffffff; margin-bottom: 10px; }
+
+.card-section { display: flex; gap: 3rem; align-items: center; margin-bottom: 3rem; }
+.card-section.reverse { flex-direction: row-reverse; }
+.section-content { flex: 1; background: #333333; padding: 2rem; border: 1px solid #4a4a4a; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.section-content p { color: #cccccc; }
+
+.scattered-img {
+    background: #ffffff;
+    padding: 10px 10px 30px 10px;
+    border: 1px solid #555555;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, z-index 0.3s;
+    position: relative;
+}
+.scattered-img img { width: 100%; max-width: 350px; display: block; filter: grayscale(0.1); }
+.scattered-img:hover { transform: scale(1.05) rotate(0deg) !important; z-index: 10; box-shadow: 8px 8px 25px rgba(0,0,0,0.5); filter: none; }
+
+.rot-izq { transform: rotate(-6deg); }
+.rot-der { transform: rotate(5deg); }
+.rot-fuerte { transform: rotate(-10deg); }
+
+.mesa-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.polaroid {
+    background: #ffffff;
+    padding: 15px 15px 45px 15px;
+    border: 1px solid #555555;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.polaroid img { width: 100%; height: 220px; object-fit: cover; margin-bottom: 15px; }
+.polaroid:hover { transform: scale(1.08) rotate(0deg) !important; z-index: 5; }
+
+.track-info h4 { font-size: 1.1rem; color: #111111; }
+.track-info p { color: #555555; font-size: 0.85rem; font-family: 'Montserrat', sans-serif;}
+
+/* ESTILO DEL BOTÓN DE REGRESO ABAJO A LA IZQUIERDA */
+.btn-regreso-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.btn-regreso {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #383838;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px #111111;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-regreso:hover {
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+    box-shadow: 2px 2px 0px #000000;
+    transform: translateY(-2px);
+}
